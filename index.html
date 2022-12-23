@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<style amp-custom>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+/* image omouse hover overlay*/
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  
+ 
+  <a href= signinsignup.html>SignUp/Signin</a>
+ 
+  <input type="text" placeholder="Search..">
+</div>
+
+
+<div >
+  <center><p style="background-color: gray;color: white;padding-top: 5px;padding-bottom: 5px;font-size: 40px;position: relative;top: -40px;padding-left: 14px;"><b>Welcome to your favorate website!!</b></p></center>
+</div>
+<p style="text-align: center;font-size: 30px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: bolder;position: relative;top: -60px;color: white;">NEW MOVIES AVAILABLE!!</p>
+
+<div class="slideshow-container"style="background-color: white;color: black;align-items: center;position: relative;top:-60px">
+
+<div class="mySlides fade" >
+  <div class="numbertext">1 / 5</div>
+  <amp-img src="https://m.media-amazon.com/images/M/MV5BYmMxZWRiMTgtZjM0Ny00NDQxLWIxYWQtZDdlNDNkOTEzYTdlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" width="400px" height="400px" ></amp-img>
+
+  <div style="display:inline-block;">
+    <p style="font-size: 30px;font-weight: bolder;position: relative;top: -40px;left: 10%;">
+
+    Thor love and Thunder
+</p>
+<p style="font-size: 15px;position: relative;top: -20px;left: 40%;">
+    
+</p>
+
+    </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <amp-img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmGggtpJ4TX3aN3PUaVWUgNODHespRPvKYAyhGUAZSqSOmPiEm" width="400px" height="400px" ></amp-img>
+
+  <div style="display:inline-block;">
+    <p style="font-size: 30px;font-weight: bolder;position: relative;top: -40px;left: 10%;">
+
+        Avatar-The way of water
+</p>
+<p style="font-size: 15px;position: relative;top: -20px;left: 40%;">
+    
+</p>
+
+    </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="images/babubali.jpg" style="width:400px;height:400px;position: relative;"></amp-img>
+  <div style="display:inline-block;">
+    <p style="font-size: 30px;font-weight: bolder;position: relative;top: -40px;left: 10%;">
+
+    Bahubali-2
+</p>
+<p style="font-size: 15px;position: relative;top: -20px;left: 40%;">
+    
+</p>
+
+    </div>
+</div>
+<div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="images/kantara.jpeg" style="width:400px;height:400px;position: relative;"></amp-img>
+    <div style="display:inline-block;">
+        <p style="font-size: 30px;font-weight: bolder;position: relative;top: -40px;left: 10%;">
+    
+            kantara
+    </p>
+    <p style="font-size: 15px;position: relative;top: -20px;left: 40%;">
+        
+    </p>
+    
+        </div>
+</div>
+<div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="images/tom.jpg" style="width:400px;height:400px;position: relative;"></amp-img>
+    <div style="display:inline-block;">
+        <p style="font-size: 30px;font-weight: bolder;position: relative;top: -40px;left: 10%;">
+    
+            Top Gun: Maverick
+    </p>
+    <p style="font-size: 15px;position: relative;top: -20px;left: 40%;">
+       
+    </p>
+    
+        </div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<p style="text-align: center;font-size: 30px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: bolder;position: relative;top: -30px;color: white;">Popular Movies</p>
+
+
+
+<div style=" display: table;">
+    <div style="display: table-row; height: 80px;">
+        <div style="width: 100px; display: table-cell;">
+            <div class="container">
+              <amp-img src="https://contentserver.com.au/assets/598411_p173378_p_v8_au.jpg" width="300" height="300"></amp-img>
+              
+            </div>
+        </div>
+        <div style="display: table-cell;width:300px;color: white;height: 150px;margin-right: 50px;margin-bottom: 20px;text-align: center;top:-140px;left: -3%; position: relative; "> 
+            <p style="font-size: 20px;">
+                THE DARK KNIGHT 
+            </p>
+            <p>
+                
+            </p>
+            <p>
+                
+            </p>
+        </div>
+        <div style="width: 100px; display: table-cell;">
+            <div class="container">
+              <amp-img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqvU5RQ_ppeJUTwvuoRJZ3I4iBAEFW6vc7BlcQf7mc0qvh3Kue" width="300" height="300"></amp-img>
+
+            <div class="middle">
+                <div class="text" style="margin-bottom: 1px;position: relative;left: 60px ;"></div>
+                <div class="text" style="position: relative;left: 60px ;"></div>
+            </div>
+            </div>
+        </div>
+        <div style="display: table-cell;width:300px;color: white;height: 150px;margin-right: 50px;margin-bottom: 20px;text-align: center;top:-140px;left: -3%; position: relative; "> 
+            <p style="font-size: 20px;">
+                The Exorcist
+            </p>
+            <p>
+                
+            </p>
+            <p>
+                
+            </p>
+        </div>
+    </div>
+    <div style="display: table-row; height: 100px;">
+        <div style="width: 100px; display: table-cell;">
+            <div class="container">
+              <amp-img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4jfQQt_0vCA4XSwGiWkffC32Tv2oajdWhaYHHVYylYGJ3v17Q" width="300" height="300"></amp-img>
+            <div class="middle">
+                <div class="text" style="margin-bottom: 1px;position: relative;left: 60px ;"></div>
+                <div class="text" style="position: relative;left: 60px ;"></div>
+            </div>
+            </div>
+        </div>
+        <div style="display: table-cell;width:300px;color: white;height: 150px;margin-right: 50px;margin-bottom: 20px;text-align: center;top:-140px;left: -3%; position: relative; "> 
+            <p style="font-size: 20px;">
+                The Matrix 
+            </p>
+            <p>
+                
+            </p>
+            <p>
+                
+            </p>
+        </div>
+        <div style="width: 100px; display: table-cell;">
+            <div class="container">
+              <amp-img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjnWchWJ8sXbIAQHB3C9qzlYYARo4gP6UhO1Rp66CkY0pnD_cn" width="300" height="300"></amp-img>
+            <div class="middle">
+                <div class="text" style="margin-bottom: 1px;position: relative;left: 60px ;"></div>
+                <div class="text" style="position: relative;left: 60px ;"></div>
+            </div>
+            </div>
+        </div>
+        <div style="display: table-cell;width:300px;color: white;height: 150px;margin-right: 50px;margin-bottom: 20px;text-align: center;top:-140px;left: -3%; position: relative; "> 
+            <p style="font-size: 20px;">
+                Sahoo
+            </p>
+            <p>
+                
+            </p>
+            <p>
+                
+            </p>
+        </div>
+    </div>
+    <div style="display: table-row; height: 100px;">
+        <div style="width: 100px; display: table-cell;">
+            <div class="container">
+              <amp-img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA_-tL18_rj9zEcjN6n41NEaJm-kRNF9UeOtvksZ4z_OW6jRA9" width="300" height="300"></amp-img>
+
+            <div class="middle">
+                <div class="text" style="margin-bottom: 1px;position: relative;left: 60px ;"></div>
+                <div class="text" style="position: relative;left: 60px ;"></div>
+            </div>
+            </div>
+        </div>
+        <div style="display: table-cell;width:300px;color: white;height: 150px;margin-right: 50px;margin-bottom: 20px;text-align: center;top:-140px;left: -3%; position: relative; "> 
+            <p style="font-size: 20px;">
+                Avengers end game
+            </p>
+            <p>
+                
+            </p>
+            <p>
+                
+            </p>
+        </div>
+        <div style="width: 100px; display: table-cell;">
+            <div class="container">
+              <amp-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-oUFRn_Err2mBTIRXR0FEuTbjJXS687eoCXHBAVBZ-v8xyeJw" width="300" height="300"></amp-img>
+
+            <div class="middle">
+                <div class="text" style="margin-bottom: 1px;position: relative;left: 60px ;"></div>
+                <div class="text" style="position: relative;left: 60px ;"></div>
+            </div>
+            </div>
+        </div>
+        <div style="display: table-cell;width:300px;color: white;height: 150px;margin-right: 50px;margin-bottom: 20px;text-align: center;top:-140px;left: -3%; position: relative; "> 
+            <p style="font-size: 20px;">
+                Titanic
+            </p>
+            <p>
+               
+            </p>
+            <p>
+                
+            </p>
+        </div>
+    </div>
+    <div style="display: table-row; height: 100px;">
+        <div style="width: 100px; display: table-cell;">
+            <div class="container">
+              <amp-img src="https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg" width="300" height="300"></amp-img>
+            <div class="middle">
+                <div class="text" style="margin-bottom: 1px;position: relative;left: 60px ;"></div>
+                <div class="text" style="position: relative;left: 60px ;"></div>
+            </div>
+            </div>
+        </div>
+        <div style="display: table-cell;width:300px;color: white;height: 150px;margin-right: 50px;margin-bottom: 20px;text-align: center;top:-140px;left: -3%; position: relative; "> 
+            <p style="font-size: 20px;">
+                Lord of Rings
+            </p>
+            <p>
+                
+            </p>
+            <p>
+                
+            </p>
+        </div>
+        <div style="width: 100px; display: table-cell;">
+            <div class="container">
+              
+              <amp-img src="https://contentserver.com.au/assets/600436_p14812_p_v8_au.jpg" width="300" height="300"></amp-img>
+            <div class="middle">
+                <div class="text" style="margin-bottom: 1px;position: relative;left: 60px ;"></div>
+                <div class="text" style="position: relative;left: 60px ;"></div>
+            </div>
+            </div>
+        </div>
+        <div style="display: table-cell;width:300px;color: white;height: 150px;margin-right: 50px;margin-bottom: 20px;text-align: center;top:-140px;left: -3%; position: relative; "> 
+            <p style="font-size: 20px;">
+                jurassic park
+            </p>
+            <p>
+                
+            </p>
+            <p>
+                
+            </p>
+        </div>
+    </div>
+    <div style="display: table-row; height: 100px;">
+        <div style="width: 100px; display: table-cell;">
+            <div class="container">
+              <amp-img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzNzI5w3iKM-KdasCDvlOEUgD2ojlf7IW5b-e3tqFmhW2JRSCz" width="300" height="300"></amp-img>
+            <div class="middle">
+                <div class="text" style="margin-bottom: 1px;position: relative;left: 60px ;"></div>
+                <div class="text" style="position: relative;left: 60px ;"></div>
+            </div>
+            </div>
+        </div>
+        <div style="display: table-cell;width:300px;color: white;height: 150px;margin-right: 50px;margin-bottom: 20px;text-align: center;top:-140px;left: -3%; position: relative; "> 
+            <p style="font-size: 20px;">
+              Black Panther Wakanda forever
+            </p>
+            <p>
+                
+            </p>
+            <p>
+                
+            </p>
+        </div>
+        <div style="width: 100px; display: table-cell;">
+            <div class="container">
+              <amp-img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdzSE7YateHtZV7CYhJ_7MG348BLmWSnYAADU6pz4E8dtLgCZM
+              " width="300" height="300"></amp-img>
+            <div class="middle">
+                <div class="text" style="margin-bottom: 1px;position: relative;left: 60px ;"></div>
+                <div class="text" style="position: relative;left: 60px ;"></div>
+            </div>
+            </div>
+        </div>
+        <div style="display: table-cell;width:300px;color: white;height: 150px;margin-right: 50px;margin-bottom: 20px;text-align: center;top:-140px;left: -3%; position: relative; "> 
+            <p style="font-size: 20px;">
+               Mad Max
+            </p>
+            <p>
+                
+            </p>
+            <p>
+               
+            </p>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    <script amp type="text/javascript">
+       src="https://cdn.ampproject.org/v0.js"
+      var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
+    // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+    clevertap.account.push({"id": "8RK-Z56-ZW5Z"});
+    clevertap.privacy.push({optOut: false}); //set the flag to true, if the user of the device opts out of sharing their data
+    clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agrees to share their IP data
+    (function () {
+          var wzrk = document.createElement('script');
+          wzrk.type = 'text/javascript';
+          wzrk.async = true;
+          wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/clevertap.min.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(wzrk, s);
+    })();
+    </script>
+
+</body>
+</html>
